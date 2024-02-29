@@ -1,0 +1,27 @@
+@import url('components/header.css');
+@import url('components/hero.css');
+@import url('components/feedback.css');
+@import url('components/footer.css');
+@import url('utils.css');
+
+:root {
+  --color-background: #10101B;
+  --color-font: #E5E3E3;
+  --color-button: #FAFAFA;
+  --color-yellow: #F9D633;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-font);
+}

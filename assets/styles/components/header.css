@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__title-container h2 {
+    letter-spacing: 2px;
+}
+
+.header__title-container img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.header__feedback {
+    display: flex;
+    align-items: center;
+}

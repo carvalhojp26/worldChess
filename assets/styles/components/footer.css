@@ -1,0 +1,8 @@
+.footer__text {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 100;
+}

@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-self: center;
+}
+
+.hero h1 {
+    width: 1100px;
+    align-self: center;
+    font-size: 70px;
+    margin-top: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    width: 800px;
+    align-self: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 3rem;
+}
+
+.hero a {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 40px;
+    align-items: center;
+    font-size: 26px;
+    margin-top: 100px;
+}
+
+.yellow-highlight {
+    color: var(--color-yellow);
+}
+
+.highlight {
+    font-weight: bold;
+}
