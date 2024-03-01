@@ -47,3 +47,77 @@
 .highlight {
     font-weight: bold;
 }
+
+@media (max-width: 1310px) {
+    .hero img {
+        width: 150px;
+    }
+
+    .hero h1 {
+        width: 950px;
+        font-size: 60px;
+        margin-top: 2rem;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero a {
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        height: 30px;
+        align-items: center;
+        font-size: 22px;
+        margin-top: 100px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 {
+        width: 800px;
+        font-size: 50px;
+    }
+    .hero p {
+        width: 600px;
+        font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+        width: 700px;
+        font-size: 40px;
+    }
+    .hero p {
+        width: 500px;
+        font-size: 14px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero img {
+        width: 100px;
+    }
+
+    .hero h1 {
+        width: 450px;
+        font-size: 28px;
+    }
+    .hero p {
+        width: 350px;
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 475px) {
+    .hero h1 {
+        width: 300px;
+        font-size: 24px;
+    }
+    .hero p {
+        width: 250px;
+        font-size: 12px;
+    }
+  }

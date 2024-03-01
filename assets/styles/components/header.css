@@ -24,3 +24,31 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 1552px) {
+    .header__title-container img {
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .header__title-container h2 {
+        font-size: 18px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header__title-container img {
+        display: none;
+    }
+
+    .header__feedback {
+        display: none;
+    }
+  }

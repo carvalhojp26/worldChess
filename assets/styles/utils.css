@@ -15,45 +15,45 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-   border: red 1px solid;
+    border: 1px solid red;
   }
   
   .section {
     margin-top: 5rem;
   }
 
-  @media (max-width: 1536px) {
+  @media (max-width: 1552px) {
     .container {
-      max-width: 1536px;
+      max-width: 1310px;
     }
   }
   
-  @media (max-width: 1280px) {
-    .container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (max-width: 1024px) {
+  @media (max-width: 1310px) {
     .container {
       max-width: 1024px;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .container {
       max-width: 768px;
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .container {
       max-width: 640px;
     }
   }
 
-  @media (max-width: 475px) {
+  @media (max-width: 640px) {
     .container {
       max-width: 475px;
+    }
+  }
+
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
     }
   }
