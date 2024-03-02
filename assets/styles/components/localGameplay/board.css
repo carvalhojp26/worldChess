@@ -1,0 +1,18 @@
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.gameBoard { 
+    width: 600px;
+    height: 600px;
+}
+
+#status {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
