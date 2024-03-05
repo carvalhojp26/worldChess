@@ -2,7 +2,8 @@
 @import url('components/main/hero.css');
 @import url('components/main/feedback.css');
 @import url('components/main/footer.css');
-@import url(components/localGameplay/board.css);
+@import url(components/gameplay/board.css);
+@import url(components/gameType/gameType.css);
 @import url('utils.css');
 
 :root {
