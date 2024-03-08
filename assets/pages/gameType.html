@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <title>World Chess</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <header>
         <header class="header container">
@@ -27,7 +28,9 @@
             <div class="choice__online">
                 <h2 class="choice__title">Online</h2>
                 <img class="choice__image" src="../images/board.png">
-                <a class="choice__link btn" href="online.html">Play</a>
+                <a class="choice__link btn" id="createGame">Create Game</a>
+                <a class="choice__link btn" id="joinGame">Join Game</a>
+                <input id="codeInput" type="text" placeholder="Invite code">
             </div>
         </div>            
     </section>
@@ -37,4 +40,25 @@
         </div>
     </footer>
 </body>
+        <script>
+            $('#createGame').on('click', function() {
+                const gameID = Math.floor(100000 + Math.random() * 900000);
+                window.location.replace('online.html?action=create&code=' + gameID);
+            });
+
+            $('#joinGame').on('click', function() {
+                if ($('#codeInput').val() == '') {
+                    $('#errorMessage').text('Please enter an invite code');
+                    return;
+                }
+
+                window.location.replace('online.html?action=join&code=' + $('#codeInput').val());
+            });
+
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('error') == 'invalidCode') {
+                $('#errorMessage').text('Invalid invite code');
+            }
+        </script>
+        <script src="../js/online.js"></script>
 </html> 
