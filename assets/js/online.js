@@ -91,7 +91,6 @@ function updateStatus () {
 
 updateStatus()  
 
-
 var config = {
     position: 'start',
     pieceTheme: '../public/chessboardjs-1.0.0/img/chesspieces/wikipedia/{piece}.png',
@@ -137,7 +136,9 @@ $(document).ready(function() {
 
     if (action === 'create') {
         createGame(code);
+        document.getElementById('gameID').textContent = code;
     } else if (action === 'join') {
         joinGame(code);
+        document.getElementById('gameID').textContent = code;
     }
 });

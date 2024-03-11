@@ -12,6 +12,7 @@
     margin-top: 100px;
     align-items: center;
 }
+
 .choice__local {
     display: flex;
     flex-direction: column;
@@ -44,4 +45,105 @@
 .choice__online img {
     width: 400px;
     margin-bottom: 30px;
+}
+
+.choice__online-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.choice__link {
+    cursor: pointer;
+}
+
+#codeInput {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-button);
+}
+
+#codeInput:focus {
+    outline: var(--color-font) 1px solid;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1024px) {
+    .choice__title {
+        font-size: 44px;    
+    }
+
+    .choice__local img {
+        width: 300px;
+    }
+
+    .choice__online img {
+        width: 300px;
+    }
+    
+    #codeInput {
+        width: 70px;
+        height: 40px;
+    }
+
+    #createGame {
+        width: 80px;
+        font-size: 12px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #joinGame {
+        font-size: 12px;
+        width: 70px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .types {
+        flex-direction: column;
+    }
+    
+    .choice__title {
+        font-size: 36px;    
+    }
+
+    .choice__local {
+        margin-bottom: 50px;
+    }
+
+    .choice__online-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #joinGame {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #codeInput {
+        width: 100px;
+    }
 }

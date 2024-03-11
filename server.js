@@ -38,5 +38,4 @@ io.on('connection', function(socket) {
 
         socket.to(data.code).emit('move', data);
     });
-    
 });

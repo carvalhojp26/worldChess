@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Chess</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
     <header class="header container">
         <div class="header__title-container">
-            <img src="images/chesslogo.png" class="header__logo">
+            <img src="assets/images/chesslogo.png" class="header__logo">
             <h2 class="header__title">WORLD CHESS</h2>
         </div>
         <div class="header__feedback">
@@ -21,17 +21,23 @@
     </header>
     <main>
         <section class="hero container section">
-            <img src="images/secundarylogo.png" class="section__secondary-logo">
+            <img src="assets/images/secundarylogo.png" class="section__secondary-logo">
             <h1>Become the chess <span class="yellow-highlight">master</span> you were always destined to be.</h1>
             <p>World Chess is a game designed to enhance your chess skills and  strategies. Challenge your friends <span class="highlight">online</span> and elevate your game to new heights. Be a <span class="highlight">master</span>.</p>
-            <a href="pages/gameType.html" class="section__button btn">Play Now</a>
+            <a href="assets/pages/gameType.html" class="section__button btn">Play Now</a>
         </section>
-        <section id="#about" class="about container section">
+        <section id="about" class="about container section">
             <h1>We would love your feedback</h1>
             <p>How will you rate your experience using World Chess so far?</p>
             <div class="feedback-box">
-                <textarea name="feedback" placeholder="Leave a comment" class="feedback-input" required></textarea>
-            </div>
+                <form action="https://api.web3forms.com/submit" method="POST" id="feedback-form">
+                    <input type="hidden" name="access_key" value="0e761d63-8235-4bbb-adf2-40749cd5bb27">
+                    <input type="hidden" name="name" required value="feedback">
+                    <input type="hidden" name="email" required value="acarvalho.jp@gmail.com">
+                    <textarea name="message" placeholder="Leave a comment" class="feedback-input" required></textarea>
+                    <button class="submit btn" type="submit" style="display: none;">Submit</button>
+                </form>
+            </div>            
         </section>
     </main>
     <footer>
@@ -40,4 +46,12 @@
         </div>
     </footer>
 </body>
+<script>
+    document.getElementById('feedback-form').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault();
+            this.submit();
+        }
+    });
+    </script>
 </html>
